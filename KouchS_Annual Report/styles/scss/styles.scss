@@ -1,0 +1,498 @@
+// VARIABLES
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+// color scheme
+// $base-100: #141414;
+// $base-95: #1f1f1f;
+// $base-90: #2c2c2c;
+// $overlay: linear-gradient(45deg, rgba(20,20,20,0.60) 0%, rgba(20,20,20,0.40) 100%);
+// $contrast-100: #ffffff;
+$primary: #dda15e;
+$primarylight: #dda15e;
+$secondary: #bc6c25;
+$tertiary: #fefae0;
+$fourth: #606c38;
+$fifth: #283618;
+
+$white: #f5f5f5;
+$primary-neutral: #c9c9c9;
+$secondary-neutral: #666666;
+$tertiary-neutral: #434343;
+$black: #000000;
+
+// units
+$unit: 1rem;
+
+// fonts 
+$primary-font: 'Playfair Display SC';
+$secondary-font: 'Fraunces';
+$tertiary-font: 'Comfortaa';
+
+.alt_respons {
+	display: none;
+}
+// imports
+@import 'global';
+@import 'ul';
+@import 'headings';
+@import 'responsive';
+@import 'design-system';
+
+
+.flex_main {
+	width: 100%;
+	margin: 0 auto;
+    display: flex;
+/*    flex-wrap: wrap;*/
+    justify-content: space-between;
+/*    align-items: center;*/
+}
+.flex_footer {
+    display: flex;
+	width: 60%;
+    justify-content: space-evenly;
+	margin: auto;
+	// align-items: center;
+}
+section {
+	padding-top: 4rem;
+}
+.beginning {
+	padding: 0;
+}
+.beginning div em, .beginning div em {
+	width: 80%;
+    justify-content: space-between;
+	padding-top: none;
+}
+.top_hr {
+	width: 200rem;
+	max-width: 100%;
+	border-bottom: solid 5rem $fourth;
+	padding: 0;
+}
+hr {
+	max-width: 50rem;
+	border-bottom-color: $fifth;
+	border-width: 0.3rem;
+	margin: auto;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 3rem;
+}
+.little_hr {
+	width: 50%;
+	max-width: 100%;
+	border-bottom: solid .15rem $primary-neutral;
+	padding: 0;
+	margin: 2% auto 2% auto;
+}
+
+// a:active, a:hover, a:link, a:visited 
+.splash a {
+	display: block;
+	text-decoration: none;
+	color: $fourth;
+	margin: 0;
+	}
+a:hover {
+	opacity: .6;
+}
+.splash a img {
+	width: -webkit-fill-available;
+}
+a {
+	text-decoration: none;
+	color: $fourth;
+	padding: 3%;
+}
+.button {
+	background-color: $primary;
+	color: $black;
+	padding: 1%;
+	border: none;
+	text-decoration: none;
+	margin: 2%;
+}
+	
+
+// SECTION 1 HOME PAGE 'flex_main'
+.left, .middle, .right {
+	width: 50%;
+    justify-content: space-between;
+	padding-top: none;
+}
+.center {
+	justify-content: space-evenly;
+}
+.frame {
+	width: 80%;
+	contain: content;
+	margin: auto;
+	align-content: center;
+    justify-content: space-between;
+}
+.frame2 {
+	@extend .frame; 
+	border-radius: 50%;
+	// width: 40%;
+}
+.frame3 {
+	width: 100%;
+	contain: content;
+}
+.frame4  {
+	width: 40%;
+	contain: content;
+	margin: auto;
+	align-content: center;
+    justify-content: space-between;
+}
+.frame4 img {
+	width: 100%;
+	contain: content;
+	max-height: 100%;
+}
+.frame5 {
+	@extend .frame;
+	max-height: 80%;
+}
+.left img, .middle img, .right img {
+	max-width: 100%;
+	justify-items: center;
+}
+span {
+	font-size: 4rem;
+	color: $primary;
+}
+.left_pad {
+	padding: 0 0 0 15%;
+}
+// .sub_left_col_text {
+// 	line-height: 3rem;
+// 	padding: 10%;
+// 	margin-top: 5%;
+// }
+.left_col_text {
+	// width: 30%;
+	margin: auto;
+	// text-align: left;
+	font-size: 2rem;
+	// line-height: 3rem;
+	padding: 5% 0% 5% 10%;
+}
+.right_col_text {
+	width: 70%;
+	margin: auto;
+	text-align: left;
+	font-size:  1.13rem;
+	line-height: 1.13rem;
+	padding: 0 10% 0% 10%;
+	margin: auto;
+}
+.line_left {	
+	border-left: solid 1px $primary-neutral;
+	border-width: medium;
+}
+// #special_right_col_text {
+// 	margin-top: 15%;
+// }
+.line_right {
+	border-right: solid 3px $fourth;
+	border-right-width: thick;
+}
+.line_left {
+	border-left: solid 3px $fourth;
+	border-right-width: thick;
+}
+
+
+// SECTION 2 HOME PAGE 'engagement'
+#social_responsibility {
+	text-align: center;
+	margin: auto;
+}
+#row1 { 
+	border-bottom-color: $primary-neutral;
+	padding: 0.001rem;
+}
+.group1, .group2, .group3, .group4 {
+	text-align: center;
+	padding-top: 0.001rem;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.group3 {
+	border-left: solid 1px $primary-neutral;
+	border-right: solid 1px $primary-neutral;
+}
+.group2 {	
+	border-left: solid 1px $primary-neutral;
+}
+
+
+// SECTION 4 HOME PAGE 'history'
+.span_history {
+	border-right: solid 3px $primary-neutral;
+	font-size: 2rem;
+	color: $black;
+}
+.list {
+	width: 80%;
+	margin: auto;
+}
+
+// SECTION 5 HOME PAGE 'motion-picture', 'television-production', 'media-networks'
+#box1, #box2, #box3, #box4 {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	border: solid 2px $fifth;
+	margin-bottom: 3%;
+	padding: 2%;
+}
+
+
+
+// FOOTER
+footer a {
+	text-decoration: none;
+	color: $fourth;
+	padding: 3%;
+}
+footer a:hover {
+	opacity: .6;
+}
+footer p {
+	margin-top: 4%;
+	text-align: center;
+}
+#special {
+	padding-top: 0;
+}
+
+
+
+// MOTION PICTURE PAGE 
+.logo {
+	width: 50%;
+	margin: 0 0 0 auto;
+	padding: 0;
+}
+.logo img {
+	width: 90%;
+}
+.side_title {
+	max-width: 10%;
+	height: 10%;
+}
+// .bar {
+// 	width: 200rem;
+// 	max-width: 100%;
+// 	border-bottom: solid 5rem $fourth;
+// 	padding: 0;
+// }
+.regiment p {
+	width: 80%;
+	margin: auto;
+}
+#box5 {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	// border: solid 2px $fifth;
+	margin-bottom: 3%;
+	padding: 2%;
+}
+
+
+// SECTION 2 MOTION PICTURE PAGE 'theatrical'
+.theatrical_space {
+	margin-top: 4%;
+}
+
+// SECTION 2 MOTION PICTURE PAGE 'home entertainment'
+.entertainment_sub {
+	margin: auto;
+	width: 70%;
+	text-align: left;
+	margin: 5% auto 5% auto;
+}
+
+.home_entertainment_space {
+	margin-top: 7%;
+}
+.little_bar {
+	width: 50%;
+	max-width: 100%;
+	border-bottom: solid .15rem $primary-neutral;
+	padding: 0;
+}
+.digital_media p {
+	margin: 2% auto 2% auto;
+	text-align: center;
+}
+
+
+// SECTION 2 MOTION PICTURE PAGE 'digital_media'
+// SECTION 2 MOTION PICTURE PAGE 'international'
+.international div div {
+	padding: 1rem;
+}
+// SECTION 2 MOTION PICTURE PAGE 'other'
+.other div div {
+	padding: 1.5rem;
+	// margin: auto;
+}
+
+
+
+
+
+
+// TELEVISION PRODUCTION PAGE 
+.type h2 {
+	margin: 10% 0 4% 0;
+}
+.type div {
+	width: 60%;
+	text-align: center;
+}
+.television_p {
+	margin: auto auto 4% auto;
+}
+.partnerships {
+	width: 80%;
+}
+.partnerships p {
+	padding: 5%;
+	margin: 2%;
+}
+.partnerships strong {
+	color: $black;
+}
+
+
+
+
+// MEDIA NETWORKS PAGE 
+.bulleted_list {
+	width: 80%;
+	margin: auto;
+	align-content: center;
+    justify-content: space-between;
+	list-style-type: circle;
+	padding: 2% 0 0 0;
+}
+.popular-releases {
+	margin: auto;
+	text-align: center;
+	margin-top: 5%;
+}
+.title {
+	font-size: 2rem;
+	text-align: center;
+	margin: 5% 0 15% 0;
+}
+.ventures div div {
+	margin-top: 5%;
+    padding: 1.5rem;
+}
+.ventures .no_space {
+	margin-top: 0;
+}
+.other_media div p {
+	font-size: 1.5rem;
+	padding: 5%;
+}
+
+.sub_text .title {	
+	margin: 2% auto;
+}
+
+
+.p_span {
+	font-size: 1rem;
+	color: $tertiary-neutral;
+}
+
+// DESIGN SYSTEM
+#design_title {
+	background-color: $fourth;
+	padding: 1% 0 1% 0;
+	padding-left: 3rem;
+	color: $tertiary;
+}
+.accordion {
+	padding-top: 0;
+}
+
+
+
+
+
+
+
+
+
+// .call_to_action {
+//     padding: $unit * 2;
+//     border: 1px solid black;
+//     border-radius: $unit;
+//     height: 230px;
+// }
+
+// .bg-gray {
+//     background-color: gray;
+// }
+
+// .bg-skyblue {
+//     background-color: skyblue;
+// }
+
+// .bg-peachpuff {
+//     background-color: peachpuff;
+// }
+
+// a {
+// 	display: inline-block;
+// 	text-decoration: none;
+// 	color: $primary;
+// 	transition: .3s all;
+
+// 	&:hover {
+// 		opacity: .6;
+// 	}
+// }
+
+
+// .btn {
+//     padding: $unit;
+//     border: 2px solid $contrast-100;
+//     font-weight: 600;
+//     color: $primary;
+
+//     &-primary {
+//         @extend .btn;
+//         background: $primary;
+// 		color: $base-100;
+//         margin-right: 1rem;
+//     }
+
+//     &-secondary {
+//         @extend .btn;
+//         border-color: $base-100;
+//         color: $base-100;
+//     }
+
+// 	&-tertiary {
+// 		@extend .btn;
+// 		border-color: transparent;
+//         background: transparent;
+//         color: $base-100;
+// 	}
+// }

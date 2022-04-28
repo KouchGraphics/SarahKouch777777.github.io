@@ -1,0 +1,114 @@
+//_design-system.scss 
+
+.tablink {
+	background-color: $fourth;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 15%;
+	margin: auto;
+	// width: 25%;
+}
+  
+.tablink:hover {
+	background-color: $fifth;
+}
+  
+/* Style the tab content */
+.tabcontent {
+	color: $black;
+	display: none;
+	padding: 50px;
+	text-align: center;
+}
+  
+#brand, #colors, #fonts, #icons, #links, #elements {
+	  background-color: $tertiary;
+}
+
+.brand p, .colors p, .fonts p, .icons p, .links p, .elements p  {
+	line-height: 1.5rem;
+}
+.accordion h2 {
+	width: 80%;
+	margin: 2% auto 2% auto;
+	color: $primary;
+}
+.accordion h4 {
+	background-color: $primary;
+	width: 80%;
+	margin: 2% auto 2% auto;
+	padding: 1% 0 1% 0;
+	color: $white;
+}
+.flex_second {
+	width: 100%;
+	margin: 2%;
+    display: flex;
+	// flex-wrap: wrap;
+    justify-content: space-evenly;
+	align-items: flex-start;
+}
+.flex_third {
+	width: 50%;
+	// margin: 2%;
+    display: flex;
+    justify-content: space-evenly;
+	align-items: flex-start;
+}
+.accordion .left, .accordion .middle, .accordion .right {
+	width: 25%;
+    justify-content: space-between;
+	padding-top: none;
+}
+.accordion ul {
+	list-style-type: none;
+}
+.accordion ul li {
+	padding: 0;
+	margin: 0;
+}
+
+.accordion ul {
+	padding: 4% 2% 4% 2%;
+}
+.accordion ul li {
+	text-align: center;
+}
+
+#lt_org {
+	background-color: $primary;
+}
+
+#lt_grn {
+	background-color: $fourth;
+}
+#bnt_org {
+	background-color: $secondary;
+}
+#dk_grn {
+	background-color: $fifth;
+}
+#crm {
+	background-color: $tertiary;
+}
+#blk {
+	color: $white;
+	background-color: $black;
+}
+#dk_gry {
+	background-color: $tertiary-neutral;
+}
+#med_gry {
+	background-color: $secondary-neutral;
+}
+#lt_gry {
+	background-color: $primary-neutral;
+}
+#wht {
+	background-color: $white;
+}
